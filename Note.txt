@@ -1,0 +1,55 @@
+Data Types
+
+2.1 整數: byte, short, int, long
+2.2 浮點數: float, double
+2.3 布林值: boolean
+2.4 字元: char,'' 一個文字
+2.5 字串: String, " " 一串文字
+
+Variable
+宣告變數
+指定資料
+使用變數
+
+宣告變數的語法：資料型態 變數名稱;
+int x;
+double y;
+boolean z;
+char c;
+String s;
+
+宣告變數、同時指定資料：資料型態 變數名稱 = 資料;
+int x = 3;
+
+先宣告變數、然後指定資料
+資料型態 變數名稱
+變數名稱 = 資料;
+double y;
+y = 3.5;
+
+＊＊資料必須和宣告的資料型態一樣，否則報錯
+
+使用變數
+
+在終端機印出資料的指令：
+System.out.printin(任意資料);
+
+沒有使用變數：
+System.out.printin(3);
+System.out.printin(true);
+
+使用變數：
+int x = 3;
+System.out.printin(x);    
+程式會去尋找x裡放的資料。印出3
+
+boolean y;
+y = ture;
+System.out.printin(y);
+
+
+
+
+
+
+

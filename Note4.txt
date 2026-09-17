@@ -1,0 +1,127 @@
+流程控制
+程式最核心的運算邏輯
+＊判斷式和迴圈
+
+1. 流程控制
+1.1 判斷式
+1.2 迴圈
+
+2. if 判斷式
+2.1 if 基本結構
+2.2 if ... else 正反結構
+2.3 if ... else if ... else 多條件結構
+
+3. switch 判斷式
+3.1 適合多條件的相等判斷情況
+3.2 switch 判斷式的基本結構
+
+4. 標準輸入
+4.1 載入 Scanner 類別
+4.2 建立 Scanner 物件
+4.3 從終端機取得使用者輸入的整數和字串
+
+
+if判斷式: 滿足某個條件，才執行程式
+基礎語法
+if(布林值){
+
+}
+程式範例
+if(true){
+    System.out.println("Hello");
+}
+
+int x=1000;
+if(x>2000){
+    System.out.println("Hello");
+}
+
+if...else正反結構
+基礎語法
+if(布林值){
+    //如果布林值是true，執行此程式碼區塊
+}else{
+    //如果布林值是false，執行此程式碼區塊
+}
+
+程式範例
+int x=1000;
+if(x>2000){
+    System.out.println(">2000");
+}else{
+    System.out.println("<=2000");
+}
+
+if...else if...else多條件結構
+基礎語法
+if(布林值){
+    //對應布林值是true，執行此程式碼區塊
+}else if(布林值){
+    //對應布林值是true，執行此程式碼區塊
+}else{
+    //上方布林值都是false，執行此程式碼區塊
+}
+
+程式範例
+int x=1000;
+if(x>2000){
+    System.out.println(">2000");
+}else if(x=2000){
+    System.out.println("=2000");
+}else{
+    System.out.println("<2000");
+}
+
+String name=Serena;
+if(name==Mike){
+    System.out.println("I am Mike.");
+}else if(name==Serena){
+    System.out.println("I am Serena.");
+}elseif(name==Linda){
+    System.out.println("I am Linda.");
+}
+
+
+switch判斷式: 適合處理多條件情況
+基礎語法
+swith(變數名稱){
+    case 比對的資料:
+        //變數中的資料和比對到任何資料相同
+        //執行這裡的程式
+        break;
+    case 比對的資料:
+        //變數中的資料和比對到任何資料相同
+        //執行這裡的程式
+        break;
+    default:
+        //變數中的資料沒有比對到任何資料
+        //執行這裡的程式
+        break;    //強迫程式跳出
+}
+//可以放很多很多個case
+
+程式範例
+String name="Serena"
+swith(name){
+    case "Mike":
+        System.out.println("I am Mike.");
+        break;  
+    case "Serena":
+        /System.out.println("I am Serena.");
+        break;
+    default:
+        System.out.println("Not Mike or Serena");
+        break;
+}
+
+標準輸入: 讓使用者從終端機輸入資料
+載入內建的java.util.Scanner類別
+import java.util.Scanner;
+
+程式範例
+//建立一個Scanner物件
+Scanner s=new Scanner(System.in);
+//取得使用者輸入的整數
+int x=s.netInt();
+//取得使用者輸入的任意文字
+String text=s.next();

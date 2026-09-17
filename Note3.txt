@@ -1,0 +1,104 @@
+運軟符號: 用來對資料作特定的操作
+
+1. 算術運算
+1.1 加減乘除
+1.2 取餘數
+
+2. 指定運算
+2.1 把資料指定給變數
+2.2 把變數資料做操作後再指定回原來的變數
+
+3. 比較運算
+3.1 比較資料的大小
+3.2 比較資料是否相等
+
+4. 單元運算
+4.1 快速的做加一或減一
+4.2 反轉布林值
+
+5. 邏輯運算
+5.1 且，英文 and
+5.2 或，英文 or
+
+6.位元運算（入門暫時不談）
+
+
+算術運算：主要用來做簡單的數學運算
+加減乘除
++
+int x = 5 + 2;
+-
+int y = 5 - 2;
+*
+int m = 5 * 2;
+/
+int n = 5 / 2;                //ans:2 整數除法(兩邊都是整數，只看整數)
+double o = 5 / 2.0;          //浮點數除法
+
+//取餘數
+%
+int x = 5 % 2;                  //整數餘數
+double y = 5 % 3.5;            //浮點數餘數
+
+指定assign運算:主要用來將資料指定給變數
+基本的指定運算
+=
+int x = 3;
+x = x + 1;
+System.out.println(x);          //印出4
+
+//搭配算術運算更新變數自身資料
++=
+int x = 3;
+x +=1; //x=x+1;
+-=
+x -=1; //x=x-1;
+*=
+x*=2; //x=x*2;
+System.out.println(x);          //印出8
+/=
+x/=2; //x=x/2;
+%=
+
+比較運算: 主要用來比較資料大小、是否相等
+大小的比較
+>
+boolean x = 5 > 2;  //true
+<
+boolean x = 5 <= 5;  //true
+>=
+boolean x = 5 < 5;  //false
+<=
+boolean x = 5 >= 2;  //true
+
+是否相等的比較
+==
+boolean x = 5 == 2;  //false
+!=
+boolean x = 5 != 2;  //true
+
+單元運算: 針對單一資料作操作
+針對單一變數做加一和減一
+++
+int x = 3
+x++;                 //x+=1;//x=x+1;
+--
+x--;  //x-=1;//x=x-1;
+針對布林值做反轉
+boolean x =!true;
+x = !x
+System.out.println(x).     //印出true
+
+邏輯運算: 主要針對兩個布林值操作
+且, and
+&&
+boolean x = true && true;    //true
+boolean y = true && false;   //false
+boolean m = false && true;   //false
+boolean n = false && false;  //false
+或, or
+||
+boolean x = true || true;    //true
+boolean y = true || false;   //true
+boolean m = false || true;   //true
+boolean n = false || false;  //false

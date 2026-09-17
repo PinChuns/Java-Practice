@@ -1,0 +1,64 @@
+Java資料型態轉換
+
+範圍大小的排序
+＊浮點數型態大於整數型態
+整數： byte < short < int < long
+浮點數： float < double
+
+小範圍轉為大範圍：自動轉換
+byte n1 = 3;
+int n2 = n1; 從int自動轉為long
+long n3 = 555555555; 從int自轉為long
+float n4 = n3; 從long自動轉為float
+
+大範圍轉為小範圍：產生錯誤
+int n1 = 3;
+byte n2 = n1; 錯誤 int轉byte，int範圍大，byte範圍小
+double n3 = 3.5;
+float n4 = n3; 錯誤 double轉float
+float n5 = 10.5 錯誤 double轉float
+
+大範圍轉為小範圍：強制轉換
+使用(資料型態)強制轉換
+*強制轉換後數字可能失真
+int n1 = 3;
+byte n2 = (byte)n1; int轉byte，原則上不行，但使用()強制轉換
+int n3 = 1024;
+byte n4 = (byte)n3;  數字會和原先的不同
+double n5 = 3.1415826536
+float n6 = (float)n5;  數字失去精準度
+
+字串與數字
+字串：任意文字
+
+可以轉換為數字的字串
+String x = "345";
+String y = "3.14159";
+
+不能轉換為數字的字串
+String m = "Hello World";
+
+字串轉成int型態: Integer.parseInt("字串")
+String s = "56";
+int x = Integer.parseInt(s)
+
+字串轉成long型態: long.parseInt("字串")
+long x = Long.parseInt("55555");
+
+字串轉成float型態: Float.parseInt("字串")
+float x = Float.parseInt(3.14);
+
+字串轉成double型態: Double.parseInt("字串")
+double x = Double.parseInt(3.1415);
+
+數字轉成字串
+使用 String.valueOf(數字) 轉為字串
+
+int x = 3;
+String s1 = String.valueOf(x);
+String s2 = String.valueOf(1024L);
+String s3 = String.valueOf(3.14F);
+double y = 3.141592656;
+String s4 = String.valueOf(y);
+
+

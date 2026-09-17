@@ -1,4 +1,4 @@
-# Java Practice ☕
+# Java Practice
 
 This repository is learning record for Java.
 

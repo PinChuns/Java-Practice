@@ -1,3 +1,4 @@
+package Java;
 public class DataTypeOperator {
     public static void main(String[] args){
         //算術運算

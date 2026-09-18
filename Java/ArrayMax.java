@@ -1,3 +1,4 @@
+package Java;
 public class ArrayMax {
     public static void main(String[] args){
         int [] numbers={33, 26, 58, 97};

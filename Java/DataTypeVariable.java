@@ -1,3 +1,4 @@
+package Java;
 public class DataTypeVariable{
     public static void main(String[] args){
         //整數，預設是int型態

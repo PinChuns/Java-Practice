@@ -1,3 +1,4 @@
+package Java;
 public class DataTypeConversion {
     public static void main(String[] args){
         //數字型態間的轉換

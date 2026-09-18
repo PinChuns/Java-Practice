@@ -1,6 +1,6 @@
 # Java Practice
 
-This repository is learning record for Java.
+This repository is a learning record for Java.
 
 ## Learning
 
@@ -15,7 +15,14 @@ Currently practicing:
 - Arrays
 - Strings
 - Methods
-- Classes and Objects
+- ArrayList
+- HashMap
+- Stack
+- Deque
+- Queue
+- Prime numbers
+- Prime factorization
+- Exception handling (`try-catch-finally`)
 - Basic problem solving
 
 ## Practice
@@ -26,7 +33,17 @@ Some of the exercises I've worked on:
 - Adding numbers
 - Finding the maximum/minimum value
 - Array exercises
+- ArrayList exercises
+- HashMap exercises
+- Stack exercises
+- Deque exercises
+- Queue exercises
 - String exercises
 - Conditional statements
 - Loops
 - Data type conversion
+- Finding prime numbers
+- Prime factorization
+- Change-making problem
+- Dynamic programming
+- Exception handling

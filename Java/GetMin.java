@@ -1,3 +1,4 @@
+package Java;
 public class GetMin {
 
     public static int min(int a, int b){
